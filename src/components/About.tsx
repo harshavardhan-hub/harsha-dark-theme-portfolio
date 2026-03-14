@@ -26,7 +26,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="font-playfair text-4xl md:text-5xl lg:text-6xl text-zinc-100 leading-tight"
           >
-            I am a builder to the core. Design, development, deployment.
+            Building the future, one line at a time.
           </motion.h3>
           
           <motion.div 
@@ -37,12 +37,10 @@ export default function About() {
             className="text-lg md:text-xl text-zinc-400 font-light space-y-6"
           >
             <p>
-              My name is Harsha Vardhan Yanakandla. I don&apos;t just write code; I craft digital experiences. 
-              Whether it&apos;s a high-performance backend architecture or an award-winning UI, I bring a unique blend of creative direction and technical depth.
+              My name is Harsha Vardhan Yanakandla. I&apos;m a Full Stack Developer who builds modern applications with technologies like NextJS, Typescript, React, Node.js, and PostgreSQL, enhancing them with AI-powered features.
             </p>
             <p>
-              I believe that the best software is an intersection of art and engineering. 
-              Every detail must feel intentional, from the typography of a landing page to the response times of an API.
+              My passion lies in transforming ideas into impactful digital products that deliver value. Whether developing from the ground up or improving existing systems, I approach every project with curiosity, creativity, and a results-driven mindset.
             </p>
           </motion.div>
           

@@ -23,7 +23,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.5 }}
             className="text-zinc-400 tracking-widest uppercase text-sm font-medium"
           >
-            Creative Director & Full-Stack Developer
+            Full Stack Developer
           </motion.h2>
           
           <h1 className="font-playfair text-6xl sm:text-7xl md:text-9xl font-bold leading-[0.9] tracking-tighter">
@@ -62,7 +62,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.9 }}
             className="text-xl md:text-2xl text-zinc-400 max-w-2xl mt-4 font-light text-balance"
           >
-            I build complete SaaS products, premium websites, and digital experiences that look world-class and actually work.
+            I build fast, scalable, and reliable web applications that are user-friendly, high-performing, and impactful.
           </motion.p>
         </motion.div>
       </div>
