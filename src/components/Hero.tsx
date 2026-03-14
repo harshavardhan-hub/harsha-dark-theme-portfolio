@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative w-full h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 overflow-hidden pt-20">
+    <section id="hero" aria-label="Hero – Harsha Vardhan Full-Stack Developer" className="relative w-full h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 overflow-hidden pt-20">
       
       {/* Background glow effects */}
       <div className="absolute top-1/4 left-1/4 w-[50vw] h-[50vw] bg-zinc-800/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none -z-10" />
@@ -17,14 +17,14 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
           className="flex flex-col gap-6"
         >
-          <motion.h2 
+          <motion.p 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             className="text-zinc-400 tracking-widest uppercase text-sm font-medium"
           >
             Full Stack Developer
-          </motion.h2>
+          </motion.p>
           
           <h1 className="font-playfair text-6xl sm:text-7xl md:text-9xl font-bold leading-[0.9] tracking-tighter">
             <span className="block overflow-hidden pb-2">

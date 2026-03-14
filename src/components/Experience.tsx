@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-950 relative">
+    <section id="experience" aria-label="Harsha Vardhan Work Experience" className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-950 relative">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
         
         <motion.div 

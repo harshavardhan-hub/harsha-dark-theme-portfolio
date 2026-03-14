@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 md:py-48 px-6 md:px-12 lg:px-24 bg-zinc-950 relative overflow-hidden">
+    <section id="contact" aria-label="Contact Harsha Vardhan" className="py-32 md:py-48 px-6 md:px-12 lg:px-24 bg-zinc-950 relative overflow-hidden">
       {/* Background large text for atmospheric effect */}
       <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-playfair font-bold text-zinc-900/50 whitespace-nowrap pointer-events-none select-none z-0">
         Let&apos;s Talk.

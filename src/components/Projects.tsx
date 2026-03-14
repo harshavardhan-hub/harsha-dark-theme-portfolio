@@ -99,7 +99,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-950">
+    <section id="projects" aria-label="Projects by Harsha Vardhan" className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-950">
       <div className="max-w-7xl mx-auto flex flex-col">
 
         <motion.div

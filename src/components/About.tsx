@@ -15,7 +15,7 @@ export default function About() {
   const imageY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
   return (
-    <section id="about" ref={containerRef} className="py-32 pt-40 md:py-32 px-6 md:px-12 lg:px-24 bg-zinc-950 relative">
+    <section id="about" aria-label="About Harsha Vardhan" ref={containerRef} className="py-32 pt-40 md:py-32 px-6 md:px-12 lg:px-24 bg-zinc-950 relative">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
         
         <div className="w-full lg:w-1/2 order-2 lg:order-1 flex flex-col gap-8">
