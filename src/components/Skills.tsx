@@ -33,7 +33,7 @@ export default function Skills() {
           </motion.div>
         </div>
 
-        <div className="w-full md:w-2/3 flex flex-wrap gap-4 md:gap-6 items-start content-start">
+        <div className="w-full md:w-2/3 grid grid-cols-3 sm:grid-cols-4 md:flex md:flex-wrap gap-2 md:gap-6 items-start content-start">
           {skills.map((skill, index) => (
             <motion.div
               key={skill}
@@ -46,7 +46,7 @@ export default function Skills() {
                 backgroundColor: 'rgba(255, 255, 255, 0.1)',
                 borderColor: 'rgba(255, 255, 255, 0.3)'
               }}
-              className="px-6 py-4 rounded-full border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm text-zinc-300 font-medium tracking-wide cursor-default transition-colors duration-300"
+              className="px-2 py-3 md:px-6 md:py-4 rounded-xl md:rounded-full border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm text-[10px] sm:text-xs md:text-base text-zinc-300 font-medium tracking-wide cursor-default transition-colors duration-300 text-center flex items-center justify-center leading-tight min-h-[48px]"
             >
               {skill}
             </motion.div>

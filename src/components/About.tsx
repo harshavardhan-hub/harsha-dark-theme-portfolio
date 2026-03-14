@@ -56,8 +56,8 @@ export default function About() {
           </motion.div>
         </div>
 
-        <div className="w-full lg:w-1/2 order-1 lg:order-2">
-          <div className="relative w-full aspect-[4/5] overflow-hidden rounded-sm mx-auto max-w-md lg:max-w-full">
+        <div className="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center items-center">
+          <div className="relative w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 overflow-hidden rounded-full shadow-2xl border border-zinc-800/50">
             <motion.div style={{ y: imageY }} className="w-full h-[120%] absolute -top-[10%] left-0">
               <Image 
                 src="/harsha.png" 
@@ -67,8 +67,8 @@ export default function About() {
                 priority
               />
             </motion.div>
-            {/* Dark overlay for premium feel */}
-            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent pointer-events-none" />
+            {/* Subtle inner dark shadow to make it pop */}
+            <div className="absolute inset-0 rounded-full shadow-inner pointer-events-none box-border border-4 border-zinc-950/30" />
           </div>
         </div>
         

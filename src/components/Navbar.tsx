@@ -28,13 +28,12 @@ export default function Navbar() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 lg:px-24 py-6 transition-all duration-500 ${
-          scrolled ? 'bg-zinc-950/80 backdrop-blur-md py-4 border-b border-zinc-800' : 'bg-transparent'
+        className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-end sm:justify-between px-6 md:px-12 lg:px-24 py-6 transition-all duration-500 ${
+          scrolled ? 'sm:bg-zinc-950/80 sm:backdrop-blur-md py-4 sm:border-b sm:border-zinc-800' : 'bg-transparent'
         }`}
       >
-        <div className="text-xl font-bold tracking-tighter mix-blend-difference z-10 relative">
-          <a href="#hero" className="font-playfair text-2xl uppercase tracking-widest hidden sm:block">Harsha Vardhan</a>
-          <a href="#hero" className="font-playfair text-2xl uppercase tracking-widest sm:hidden">HVY.</a>
+        <div className="text-xl font-bold tracking-tighter mix-blend-difference z-10 relative hidden sm:block">
+          <a href="#hero" className="font-playfair text-2xl uppercase tracking-widest">Harsha Vardhan</a>
         </div>
 
         <nav className="hidden md:flex items-center gap-8 mix-blend-difference z-10">

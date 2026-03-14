@@ -7,14 +7,6 @@ import { ArrowUpRight, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: "ExamGenius AI",
-    description: "Adaptive learning platform that personalizes content delivery and difficulty based on student performance.",
-    tech: ["React", "Node.js", "MongoDB", "DeepSeek AI"],
-    image: "/examgenius.png",
-    liveUrl: "#",
-    githubUrl: "#"
-  },
-  {
     title: "CareOps",
     description: "Seamless booking and scheduling system for medical professionals with automated calendar management.",
     tech: ["React", "Node.js", "Google Calendar API", "Tailwind"],
@@ -68,10 +60,10 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
     >
       <div className="relative w-full aspect-[4/3] rounded-sm overflow-hidden group cursor-pointer bg-zinc-900">
         <motion.div style={{ y: imageY }} className="absolute -top-[15%] left-0 w-full h-[130%]">
-          <Image 
-            src={project.image} 
-            alt={project.title} 
-            fill 
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
             className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
           />
         </motion.div>
@@ -88,7 +80,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
             <a href={project.liveUrl} className="hover:text-zinc-100 transition-colors"><ArrowUpRight size={22} /></a>
           </div>
         </div>
-        
+
         <p className="text-zinc-400 font-light text-lg line-clamp-2">
           {project.description}
         </p>
@@ -109,8 +101,8 @@ export default function Projects() {
   return (
     <section id="projects" className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-950">
       <div className="max-w-7xl mx-auto flex flex-col">
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -118,7 +110,7 @@ export default function Projects() {
           className="mb-12 md:mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8"
         >
           <h2 className="font-playfair text-5xl md:text-7xl text-zinc-100 tracking-tight leading-none">
-            Selected<br/>Works.
+            Selected<br />Works.
           </h2>
           <p className="text-zinc-400 max-w-md font-light text-lg pb-1">
             A showcase of products built from the ground up, combining powerful architecture with intuitive design.
