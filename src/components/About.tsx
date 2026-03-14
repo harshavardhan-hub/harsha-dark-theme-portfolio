@@ -63,7 +63,7 @@ export default function About() {
                 src="/harsha.png" 
                 alt="Harsha Vardhan" 
                 fill 
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
+                className="object-cover transition-all duration-700 hover:scale-105"
                 priority
               />
             </motion.div>

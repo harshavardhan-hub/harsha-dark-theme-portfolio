@@ -71,15 +71,15 @@ export default function Certificates() {
                     alt={`Certificate ${index + 1}`}
                     fill
                     priority
-                    className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
-                {/* Premium Dark overlay removed on hover */}
-                <div className="absolute inset-0 bg-zinc-950/20 group-hover:bg-transparent transition-colors duration-500" />
+                {/* Premium colored overlay appears on hover */}
+                <div className="absolute inset-0 bg-zinc-950/60 opacity-0 group-hover:opacity-100 backdrop-blur-[2px] transition-all duration-500" />
 
                 {/* View Certificate Button overlay */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                  <span className="bg-zinc-100 text-zinc-950 px-6 py-2 rounded-full font-medium text-sm tracking-wide">
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                  <span className="bg-zinc-100 text-zinc-950 hover:bg-white px-6 py-2.5 rounded-full font-medium text-sm tracking-wide shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     View Certificate
                   </span>
                 </div>
@@ -98,12 +98,12 @@ export default function Certificates() {
                     alt={`Certificate ${index + 1}`}
                     fill
                     priority
-                    className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
-                <div className="absolute inset-0 bg-zinc-950/20 group-hover:bg-transparent transition-colors duration-500" />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                  <span className="bg-zinc-100 text-zinc-950 px-6 py-2 rounded-full font-medium text-sm tracking-wide">
+                <div className="absolute inset-0 bg-zinc-950/60 opacity-0 group-hover:opacity-100 backdrop-blur-[2px] transition-all duration-500" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                  <span className="bg-zinc-100 text-zinc-950 hover:bg-white px-6 py-2.5 rounded-full font-medium text-sm tracking-wide shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     View Certificate
                   </span>
                 </div>
@@ -131,12 +131,12 @@ export default function Certificates() {
                     alt={`Certificate ${index + 1}`}
                     fill
                     priority
-                    className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
-                <div className="absolute inset-0 bg-zinc-950/20 group-hover:bg-transparent transition-colors duration-500" />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                  <span className="bg-zinc-100 text-zinc-950 px-6 py-2 rounded-full font-medium text-sm tracking-wide">
+                <div className="absolute inset-0 bg-zinc-950/60 opacity-0 group-hover:opacity-100 backdrop-blur-[2px] transition-all duration-500" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                  <span className="bg-zinc-100 text-zinc-950 hover:bg-white px-6 py-2.5 rounded-full font-medium text-sm tracking-wide shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     View
                   </span>
                 </div>
