@@ -68,6 +68,14 @@ export default function Hero() {
         </motion.div>
       </div>
       
+      {/* Hidden internal navigation links for SEO – invisible to users */}
+      <nav aria-label="Site sections" className="sr-only">
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/experience">Experience</a>
+        <a href="/contact">Contact</a>
+      </nav>
+
       {/* Scroll Indicator */}
       <motion.div 
         initial={{ opacity: 0 }}

@@ -16,10 +16,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://harshavy.in"),
+  metadataBase: new URL("https://www.harshavy.in"),
   title: {
-    default: "Harsha Vardhan Yanakandla",
-    template: "%s | Harsha Vardhan Yanakandla",
+    default: "Harsha Vardhan Yanakandla | Portfolio",
+    template: "%s | Harsha Vardhan Yanakandla Portfolio",
   },
   description:
     "Harsha Vardhan Yanakandla – Full-stack developer specializing in SaaS products, web apps, and premium digital experiences. Explore projects, experience, and skills.",
@@ -86,9 +86,14 @@ export const metadata: Metadata = {
     creator: "@harshavy",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
     shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    apple: { url: "/favicon-192x192.png", sizes: "180x180", type: "image/png" },
   },
   category: "technology",
 };
@@ -98,14 +103,15 @@ const jsonLd = {
   "@type": "Person",
   name: "Harsha Vardhan Yanakandla",
   alternateName: ["Harsha", "Harsha Vardhan", "harshavy"],
-  url: "https://harshavy.in",
-  image: "https://harshavy.in/harsha.png",
-  jobTitle: "Full-Stack Developer",
+  url: "https://www.harshavy.in",
+  image: "https://www.harshavy.in/harsha.png",
+  jobTitle: "Full Stack Developer",
   description:
     "Full-stack developer specializing in SaaS products, React, Next.js, and premium digital experiences.",
   sameAs: [
     "https://github.com/harshavy",
     "https://linkedin.com/in/harshavy",
+    "https://twitter.com/harshavy",
   ],
   knowsAbout: [
     "Full-Stack Development",
@@ -116,6 +122,13 @@ const jsonLd = {
     "Node.js",
     "Web Development",
   ],
+};
+
+const jsonLdWebSite = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Harsha Vardhan Yanakandla Portfolio",
+  url: "https://www.harshavy.in",
 };
 
 const jsonLdCreativeWork = {
@@ -138,7 +151,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="canonical" href="https://harshavy.in/" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon-192x192.png" />
+        <link rel="canonical" href="https://www.harshavy.in/" />
         <meta name="theme-color" content="#09090b" />
         <meta name="geo.region" content="IN" />
         <meta name="geo.placename" content="India" />
@@ -154,6 +170,12 @@ export default function RootLayout({
           id="json-ld-creative-work"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdCreativeWork) }}
+          strategy="afterInteractive"
+        />
+        <Script
+          id="json-ld-website"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }}
           strategy="afterInteractive"
         />
         <CustomCursor />

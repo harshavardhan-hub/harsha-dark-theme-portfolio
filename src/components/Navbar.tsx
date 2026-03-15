@@ -4,10 +4,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 const links = [
-  { name: 'About', href: '/#about' },
-  { name: 'Projects', href: '/#projects' },
-  { name: 'Experience', href: '/#experience' },
-  { name: 'Contact', href: '/#contact' },
+  { name: 'About', href: '/about' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Experience', href: '/experience' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export default function Navbar() {
