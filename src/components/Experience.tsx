@@ -15,9 +15,10 @@ export default function Experience() {
           className="text-center mb-24"
         >
           <span className="text-zinc-500 uppercase tracking-widest text-sm mb-4 block">The Journey</span>
-          <h2 className="font-playfair text-4xl md:text-6xl text-zinc-100 tracking-tight">
+          <h2 className="sr-only">Experience</h2>
+          <div aria-hidden="true" className="font-playfair text-4xl md:text-6xl text-zinc-100 tracking-tight">
             Building from day one.
-          </h2>
+          </div>
         </motion.div>
 
         <div className="relative border-l border-zinc-800 pl-8 md:pl-16 w-full space-y-16 md:space-y-20">

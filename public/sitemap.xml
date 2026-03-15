@@ -3,31 +3,26 @@
   <url>
     <loc>https://www.harshavy.in/</loc>
     <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://harshavy.in/#about</loc>
+    <loc>https://www.harshavy.in/about</loc>
     <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harshavy.in/#projects</loc>
+    <loc>https://www.harshavy.in/projects</loc>
     <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://harshavy.in/#experience</loc>
+    <loc>https://www.harshavy.in/experience</loc>
     <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harshavy.in/#contact</loc>
+    <loc>https://www.harshavy.in/contact</loc>
     <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>

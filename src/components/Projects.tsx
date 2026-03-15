@@ -62,7 +62,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
         <motion.div style={{ y: imageY }} className="absolute -top-[15%] left-0 w-full h-[130%]">
           <Image
             src={project.image}
-            alt={project.title}
+            alt={`${project.title} software built by Harsha Vardhan`}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
           />
@@ -101,6 +101,7 @@ export default function Projects() {
   return (
     <section id="projects" aria-label="Projects by Harsha Vardhan" className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-950">
       <div className="max-w-7xl mx-auto flex flex-col">
+        <h2 className="sr-only">Projects</h2>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -109,12 +110,17 @@ export default function Projects() {
           transition={{ duration: 0.8 }}
           className="mb-12 md:mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8"
         >
-          <h2 className="font-playfair text-5xl md:text-7xl text-zinc-100 tracking-tight leading-none">
+          <div aria-hidden="true" className="font-playfair text-5xl md:text-7xl text-zinc-100 tracking-tight leading-none">
             Selected<br />Works.
-          </h2>
-          <p className="text-zinc-400 max-w-md font-light text-lg pb-1">
-            A showcase of products built from the ground up, combining powerful architecture with intuitive design.
-          </p>
+          </div>
+          <div className="flex flex-col gap-4">
+            <p className="text-zinc-400 max-w-md font-light text-lg pb-1">
+              A showcase of products built from the ground up, combining powerful architecture with intuitive design.
+            </p>
+            <a href="/projects" className="text-sm tracking-widest uppercase text-zinc-300 hover:text-white border-b border-white/20 hover:border-white transition-all w-fit">
+              View all projects
+            </a>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-24 gap-y-24">

@@ -18,8 +18,8 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://harshavy.in"),
   title: {
-    default: "Harsha Vardhan | Full-Stack Developer & SaaS Builder",
-    template: "%s | Harsha Vardhan",
+    default: "Harsha Vardhan Yanakandla",
+    template: "%s | Harsha Vardhan Yanakandla",
   },
   description:
     "Harsha Vardhan Yanakandla – Full-stack developer specializing in SaaS products, web apps, and premium digital experiences. Explore projects, experience, and skills.",
@@ -58,30 +58,30 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://harshavy.in/",
+    canonical: "https://www.harshavy.in/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://harshavy.in/",
-    siteName: "Harsha Vardhan Portfolio",
-    title: "Harsha Vardhan | Full-Stack Developer & SaaS Builder",
+    url: "https://www.harshavy.in/",
+    siteName: "Harsha Vardhan Yanakandla",
+    title: "Harsha Vardhan Yanakandla",
     description:
-      "Explore the portfolio of Harsha Vardhan — Full-stack developer, SaaS builder, and creator of premium digital experiences.",
+      "Explore the portfolio of Harsha Vardhan Yanakandla — Full-stack developer, specializing in React, Next.js, and premium digital experiences.",
     images: [
       {
         url: "/harsha.png",
         width: 1200,
         height: 630,
-        alt: "Harsha Vardhan – Full-Stack Developer",
+        alt: "Harsha Vardhan Yanakandla – Full-Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Harsha Vardhan | Full-Stack Developer & SaaS Builder",
+    title: "Harsha Vardhan Yanakandla",
     description:
-      "Portfolio of Harsha Vardhan Yanakandla — Full-stack developer specializing in SaaS, React, and Next.js.",
+      "Portfolio of Harsha Vardhan Yanakandla — Full-stack developer specializing in React and Next.js.",
     images: ["/harsha.png"],
     creator: "@harshavy",
   },
@@ -118,6 +118,17 @@ const jsonLd = {
   ],
 };
 
+const jsonLdCreativeWork = {
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  name: "Harsha Vardhan's Projects",
+  author: {
+    "@type": "Person",
+    name: "Harsha Vardhan Yanakandla"
+  },
+  url: "https://www.harshavy.in/projects"
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -126,6 +137,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="canonical" href="https://harshavy.in/" />
         <meta name="theme-color" content="#09090b" />
         <meta name="geo.region" content="IN" />
@@ -136,6 +148,12 @@ export default function RootLayout({
           id="json-ld-person"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          strategy="afterInteractive"
+        />
+        <Script
+          id="json-ld-creative-work"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdCreativeWork) }}
           strategy="afterInteractive"
         />
         <CustomCursor />

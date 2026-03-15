@@ -19,15 +19,17 @@ export default function About() {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
         
         <div className="w-full lg:w-1/2 order-2 lg:order-1 flex flex-col gap-8">
-          <motion.h3 
+          <h2 className="sr-only">About</h2>
+          <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
             className="font-playfair text-4xl md:text-5xl lg:text-6xl text-zinc-100 leading-tight"
+            aria-hidden="true"
           >
             Building the future, one line at a time.
-          </motion.h3>
+          </motion.div>
           
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -61,7 +63,7 @@ export default function About() {
             <motion.div style={{ y: imageY }} className="w-full h-[120%] absolute -top-[10%] left-0">
               <Image 
                 src="/harsha.png" 
-                alt="Harsha Vardhan" 
+                alt="Harsha Vardhan Yanakandla - Full Stack Developer" 
                 fill 
                 className="object-cover transition-all duration-700 hover:scale-105"
                 priority

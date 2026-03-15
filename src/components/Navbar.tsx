@@ -4,10 +4,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 const links = [
-  { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'About', href: '/#about' },
+  { name: 'Projects', href: '/#projects' },
+  { name: 'Experience', href: '/#experience' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 export default function Navbar() {
@@ -33,7 +33,7 @@ export default function Navbar() {
         }`}
       >
         <div className="text-xl font-bold tracking-tighter mix-blend-difference z-10 relative hidden sm:block">
-          <a href="#hero" className="font-playfair text-2xl uppercase tracking-widest">Harsha Vardhan</a>
+          <a href="/#hero" className="font-playfair text-2xl uppercase tracking-widest">Harsha Vardhan</a>
         </div>
 
         <nav className="hidden md:flex items-center gap-8 mix-blend-difference z-10">

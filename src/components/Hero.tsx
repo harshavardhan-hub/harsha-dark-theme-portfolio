@@ -26,7 +26,8 @@ export default function Hero() {
             Full Stack Developer
           </motion.p>
           
-          <h1 className="font-playfair text-6xl sm:text-7xl md:text-9xl font-bold leading-[0.9] tracking-tighter">
+          <h1 className="sr-only">Harsha Vardhan Yanakandla – Full Stack Developer</h1>
+          <div aria-hidden="true" className="font-playfair text-6xl sm:text-7xl md:text-9xl font-bold leading-[0.9] tracking-tighter">
             <span className="block overflow-hidden pb-2">
               <motion.span 
                 initial={{ y: "100%" }}
@@ -47,7 +48,7 @@ export default function Hero() {
                 Vardhan.
               </motion.span>
             </span>
-          </h1>
+          </div>
           
           <motion.div 
             initial={{ opacity: 0, flexGrow: 0, width: 0 }}
